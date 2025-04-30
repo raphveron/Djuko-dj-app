@@ -1,0 +1,1050 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Apr 24 2025 19:33:44 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="680a82ef30fab6e54f905dc0" data-wf-site="680a82ef30fab6e54f905d55">
+<head>
+  <meta charset="utf-8">
+  <title>Home V3</title>
+  <meta content="Home V3" property="og:title">
+  <meta content="Home V3" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/djuko-2b526d.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a698"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="6171a155-3486-cb0d-8228-09e7ac241849"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b25"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb92"] {width:200%;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a698"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="6171a155-3486-cb0d-8228-09e7ac241849"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b25"] {width:200%;}html.w-mod-js:not(.w-mod-ix) [data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb92"] {width:200%;}}</style>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600,700"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+/* CSS Fluid Responsive */
+  html { font-size: calc(0.5991091314031181rem + 0.4454342984409799vw); }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.5991091314031181rem + 0.4454342984409799vw); } }
+  @media screen and (max-width:991px) { html { font-size: calc(0.44698660714285715rem + 0.8928571428571428vw); } }
+  @media screen and (max-width:767px) { html { font-size: calc(0.6671006944444444rem + 0.6944444444444444vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+</style>
+    </div>
+    <div data-animation="default" data-collapse="medium" data-duration="500" data-easing="ease-out" data-easing2="ease-in-back" data-no-scroll="1" role="banner" class="navbar w-nav">
+      <div class="padding-global is-navbar">
+        <div class="container-large">
+          <div class="navbar_content">
+            <a href="../index.html" class="navbar_logo-link w-nav-brand"><img loading="lazy" src="../images/Group-1321319632_1Group-1321319632.webp" alt="" class="navbar_logo"></a>
+            <div class="nav_wrap">
+              <nav role="navigation" class="nav_mobile w-nav-menu">
+                <div class="navbar_list">
+                  <a href="../home/home-v1.html" class="nav_links w-nav-link">Home V.1</a>
+                  <a href="../pricing/pricing-1.html" class="nav_links w-nav-link">Pricing V.1</a>
+                  <a href="../blog/blog-1.html" class="nav_links w-nav-link">Blog V.1</a>
+                  <div data-delay="0" data-hover="false" data-w-id="9edf84aa-1c78-d247-2c17-fa546717f193" class="nav_dropdown w-dropdown">
+                    <div class="nav_links is-dropdown w-dropdown-toggle">
+                      <div class="text-block">Pages</div>
+                      <div class="nav_link-icon w-icon-dropdown-toggle"></div>
+                    </div>
+                    <nav class="nav_link-dropdown w-dropdown-list">
+                      <div class="nav_dropdown-wrap">
+                        <div class="nav_dropdown-content">
+                          <div class="nav_dropdown-column">
+                            <a href="../home/home-v1.html" class="nav_dropdown-link hide-mobile-landscape w-dropdown-link">Home V.1</a>
+                            <a href="../home/home-v2.html" class="nav_dropdown-link w-dropdown-link">Home V.2</a>
+                            <a href="../home/home-v3.html" aria-current="page" class="nav_dropdown-link w-dropdown-link w--current">Home V.3</a>
+                            <a href="../features.html" class="nav_dropdown-link w-dropdown-link">Features</a>
+                          </div>
+                          <div class="nav_dropdown-column">
+                            <a href="../pricing/pricing-1.html" class="nav_dropdown-link hide-mobile-landscape w-dropdown-link">Pricing V.1</a>
+                            <a href="../pricing/pricing-2.html" class="nav_dropdown-link w-dropdown-link">Pricing V.2</a>
+                            <a href="../pricing/pricing-3.html" class="nav_dropdown-link w-dropdown-link">Pricing V.3</a>
+                            <a href="../about.html" class="nav_dropdown-link w-dropdown-link">About</a>
+                          </div>
+                          <div class="nav_dropdown-column">
+                            <a href="../blog/blog-1.html" class="nav_dropdown-link hide-mobile-landscape w-dropdown-link">Blog V.1</a>
+                            <a href="../blog/blog-2.html" class="nav_dropdown-link w-dropdown-link">Blog V.2</a>
+                            <a href="../blog/blog-3.html" class="nav_dropdown-link w-dropdown-link">Blog V.3</a>
+                            <a href="https://nexio-temlis.webflow.io/articles/simplify-and-empower-your-financial-management-with-aurion" class="nav_dropdown-link w-dropdown-link">Blog Post</a>
+                          </div>
+                          <div class="nav_dropdown-column">
+                            <a href="https://nexio-temlis.webflow.io/product/track-your-balance" class="nav_dropdown-link w-dropdown-link">Product</a>
+                            <a href="https://nexio-temlis.webflow.io/category/starter" class="nav_dropdown-link w-dropdown-link">Categories</a>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="nav_buttons-wrap">
+              <div class="login-wrap hide-mobile-landscape">
+                <a href="http://temlis.com" class="button w-button">Contact</a>
+              </div>
+              <div class="menu-button w-nav-button">
+                <div class="nav-button_component">
+                  <div class="nav-button_line is-first"></div>
+                  <div class="nav-button_line is-second"></div>
+                  <div class="nav-button_line is-third"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <section class="section_hero is-padd">
+        <div class="padding-global is-hero">
+          <div class="container-large">
+            <div class="hero_wrap">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="6a3d507e-a2c7-9e1f-4a21-ed206fc125f8" class="light_line"><img src="../images/arrow-left.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient is-left"></div>
+                  </div>
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Simplify your workflow</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h1 data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b31" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-style-h1">Enhance your<br>financial control with Aurion</h1>
+                  <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b35" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="description">
+                    <div>Streamline your business&#x27;s financial management with our intuitive, scalable SaaS platform. Designed for U.S. enterprises, our solutions simplify complex processes.</div>
+                  </div>
+                </div>
+                <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b38" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
+                  <a href="http://temlis.com" class="button w-button">Get started</a>
+                </div>
+              </div>
+              <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b3b" style="opacity:0" class="hero_visual is-sec">
+                <div class="hero_img is-sec"><img src="../images/Frame-2147226991_1Frame-2147226991.webp" loading="lazy" sizes="(max-width: 2102px) 100vw, 2102px" srcset="../images/Frame-2147226991_1Frame-2147226991.webp 500w, ../images/Frame-2147226991_1Frame-2147226991.webp 800w, ../images/Frame-2147226991_1Frame-2147226991.webp 1080w, ../images/Frame-2147226991_1Frame-2147226991.webp 1600w, ../images/Frame-2147226991_1Frame-2147226991.webp 2000w, ../images/Frame-2147226991_1Frame-2147226991.webp 2102w" alt="" class="img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dash_bg"><img src="../images/asdd_1asdd.webp" loading="lazy" sizes="(max-width: 2160px) 100vw, 2160px" srcset="../images/asdd_1-p-500.png 500w, ../images/asdd_1-p-800.png 800w, ../images/asdd_1-p-1080.png 1080w, ../images/asdd_1-p-1600.png 1600w, ../images/asdd_1-p-2000.png 2000w, ../images/asdd_1asdd.webp 2160w" alt="" class="img is-bg"></div>
+        <div class="home_gradient is-third"></div>
+      </section>
+      <section class="section_logos">
+        <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b48" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="logos_wrap">
+          <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b49" style="-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="logos_flex">
+            <div class="logos_group">
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+            </div>
+            <div class="logos_group">
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+            </div>
+            <div class="logos_group">
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-1.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-2.svg" loading="lazy" alt="" class="logo"></div>
+              <div class="logos"><img src="../images/Logo-3.svg" loading="lazy" alt="" class="logo"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_features">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="wrap">
+              <div class="top is-left">
+                <div class="badge">
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Our workflow</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332b85" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-style-h2">How our platform makes your <br>workflow easier</h2>
+                </div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" style="opacity:0" data-hide-arrows="false" data-disable-swipe="false" data-w-id="e9551876-07e3-be42-410f-e23c0632a41f" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                <div class="mask is-sec w-slider-mask">
+                  <div class="slide w-slide">
+                    <div data-w-id="f8a64db0-5289-f2f0-fb0b-171f17b87c20" style="opacity:0" class="features_card">
+                      <div data-w-id="f8a64db0-5289-f2f0-fb0b-171f17b87c21" style="opacity:0" class="features_visual is-box"><img src="../images/Frame-1000002213_1Frame-1000002213.webp" loading="lazy" sizes="(max-width: 1104px) 100vw, 1104px" srcset="../images/Frame-1000002213_1Frame-1000002213.webp 500w, ../images/Frame-1000002213_1Frame-1000002213.webp 800w, ../images/Frame-1000002213_1Frame-1000002213.webp 1104w" alt="" class="img"></div>
+                      <div class="features_content">
+                        <div data-w-id="f8a64db0-5289-f2f0-fb0b-171f17b87c25" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-2xl">Sign up and customize</div>
+                        <div data-w-id="f8a64db0-5289-f2f0-fb0b-171f17b87c27" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Create your account in minutes and tailor the platform to meet your company&#x27;s unique financial needs.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <div data-w-id="00b5095f-df79-b1f6-ba00-66790b7497bc" style="opacity:0" class="features_card">
+                      <div class="features_content">
+                        <div data-w-id="00b5095f-df79-b1f6-ba00-66790b7497be" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-2xl">Link Your Accounts</div>
+                        <div data-w-id="00b5095f-df79-b1f6-ba00-66790b7497c0" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Create your account in minutes and tailor the platform to meet your company&#x27;s unique financial needs.</div>
+                      </div>
+                      <div data-w-id="00b5095f-df79-b1f6-ba00-66790b7497c2" style="opacity:0" class="features_visual is-box"><img src="../images/Frame-1000002213-1_2Frame-1000002213-1.webp" loading="lazy" sizes="(max-width: 1104px) 100vw, 1104px" srcset="../images/Frame-1000002213-1_2Frame-1000002213-1.webp 500w, ../images/Frame-1000002213-1_2Frame-1000002213-1.webp 800w, ../images/Frame-1000002213-1_2Frame-1000002213-1.webp 1080w, ../images/Frame-1000002213-1_2Frame-1000002213-1.webp 1104w" alt="" class="img"></div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <div data-w-id="22879f7d-f724-135f-9e98-032c5560cae0" style="opacity:0" class="features_card">
+                      <div class="features_content">
+                        <div data-w-id="22879f7d-f724-135f-9e98-032c5560cae2" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-2xl">Integrate Your Data</div>
+                        <div data-w-id="22879f7d-f724-135f-9e98-032c5560cae4" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Easily link your bank accounts, credit cards, loans, and investment accounts.</div>
+                      </div>
+                      <div data-w-id="22879f7d-f724-135f-9e98-032c5560cae6" style="opacity:0" class="features_visual is-box"><img src="../images/Frame-1000002213-2_2Frame-1000002213-2.webp" loading="lazy" sizes="(max-width: 1104px) 100vw, 1104px" srcset="../images/Frame-1000002213-2_2Frame-1000002213-2.webp 500w, ../images/Frame-1000002213-2_2Frame-1000002213-2.webp 800w, ../images/Frame-1000002213-2_2Frame-1000002213-2.webp 1104w" alt="" class="img"></div>
+                    </div>
+                  </div>
+                  <div class="slide w-slide">
+                    <div data-w-id="c6db455a-8ed5-51b3-3fa7-5818bb325ce8" style="opacity:0" class="features_card">
+                      <div data-w-id="c6db455a-8ed5-51b3-3fa7-5818bb325ce9" style="opacity:0" class="features_visual is-box"><img src="../images/Frame-1000002213-3_1Frame-1000002213-3.webp" loading="lazy" sizes="(max-width: 1104px) 100vw, 1104px" srcset="../images/Frame-1000002213-3_1-p-500.png 500w, ../images/Frame-1000002213-3_1-p-800.png 800w, ../images/Frame-1000002213-3_1Frame-1000002213-3.webp 1104w" alt="" class="img"></div>
+                      <div class="features_content">
+                        <div data-w-id="c6db455a-8ed5-51b3-3fa7-5818bb325ced" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-2xl">Start Managing Efficiently</div>
+                        <div data-w-id="c6db455a-8ed5-51b3-3fa7-5818bb325cef" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Seamlessly connect your existing financial tools and import your data for a smooth transition.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="arrow is-left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 12 24" fill="none" class="icon_arrow">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.84306 12.7116L7.50006 18.3686L8.91406 16.9546L3.96406 12.0046L8.91406 7.05463L7.50006 5.64062L1.84306 11.2976C1.65559 11.4852 1.55028 11.7395 1.55028 12.0046C1.55028 12.2698 1.65559 12.5241 1.84306 12.7116Z" fill="currentColor"></path>
+                  </svg><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="icon_gradient"></div>
+                <div class="arrow w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 12 24" fill="none" class="icon_arrow">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1569 12.7116L4.49994 18.3686L3.08594 16.9546L8.03594 12.0046L3.08594 7.05463L4.49994 5.64062L10.1569 11.2976C10.3444 11.4852 10.4497 11.7395 10.4497 12.0046C10.4497 12.2698 10.3444 12.5241 10.1569 12.7116Z" fill="currentColor"></path>
+                  </svg><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="icon_gradient"></div>
+                <div class="hide w-slider-nav w-round w-num"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_statistics">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="wrap">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="6a3d507e-a2c7-9e1f-4a21-ed206fc125f8" class="light_line"><img src="../images/arrow-left.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient is-left"></div>
+                  </div>
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Our statistics</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332bb5" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-style-h2">The numbers that define our success</h2>
+                </div>
+              </div>
+              <div class="w-layout-grid statistics_group">
+                <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332bb8" style="opacity:0" class="statistics_item">
+                  <div class="number">
+                    <div data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a696" class="light_line"><img loading="lazy" src="../images/arrow-left.svg" alt="" class="badge_right">
+                      <div data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a698" class="light_gradient is-left"></div>
+                    </div>
+                    <div data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a699" style="opacity:0" class="number_element">
+                      <div>1</div><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="number_gradient">
+                    </div>
+                    <div data-w-id="ed6841e2-9564-8371-37c9-0a89c0b8a69d" class="light_line"><img loading="lazy" src="../images/arrow-right.svg" alt="" class="badge_right">
+                      <div style="width:200%" class="light_gradient"></div>
+                    </div>
+                  </div>
+                  <div class="spacer-small"></div>
+                  <div class="statistics_padding">
+                    <div class="statistics_item-content">
+                      <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332bba" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-number">95%</div>
+                      <div>
+                        <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332bbd" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-xl text-color-primary">Fast-Track Results</div>
+                        <div class="spacer-xsmall"></div>
+                        <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332bc0" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-sm">Accelerate your growth journey with Datagrid’s cutting-edge analytics.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="5ef8d5be-02e7-8407-24ee-1487b8de1085" style="opacity:0" class="statistics_item">
+                  <div class="number">
+                    <div data-w-id="6171a155-3486-cb0d-8228-09e7ac241847" class="light_line"><img loading="lazy" src="../images/arrow-left.svg" alt="" class="badge_right">
+                      <div data-w-id="6171a155-3486-cb0d-8228-09e7ac241849" class="light_gradient is-left"></div>
+                    </div>
+                    <div data-w-id="6171a155-3486-cb0d-8228-09e7ac24184a" style="opacity:0" class="number_element">
+                      <div>2</div><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="number_gradient">
+                    </div>
+                    <div data-w-id="6171a155-3486-cb0d-8228-09e7ac24184e" class="light_line"><img loading="lazy" src="../images/arrow-right.svg" alt="" class="badge_right">
+                      <div style="width:200%" class="light_gradient"></div>
+                    </div>
+                  </div>
+                  <div class="spacer-small"></div>
+                  <div class="statistics_padding">
+                    <div class="statistics_item-content">
+                      <div data-w-id="5ef8d5be-02e7-8407-24ee-1487b8de1094" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-number">20%</div>
+                      <div>
+                        <div data-w-id="5ef8d5be-02e7-8407-24ee-1487b8de1097" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-xl text-color-primary">Increased Efficiency</div>
+                        <div class="spacer-xsmall"></div>
+                        <div data-w-id="5ef8d5be-02e7-8407-24ee-1487b8de109a" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-sm">Uncover hidden opportunities in your data with Datagrid’s automated insights.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="adca0b20-f4e5-587a-6417-6606af753788" style="opacity:0" class="statistics_item">
+                  <div class="number">
+                    <div data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b23" class="light_line"><img loading="lazy" src="../images/arrow-left.svg" alt="" class="badge_right">
+                      <div data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b25" class="light_gradient is-left"></div>
+                    </div>
+                    <div data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b26" style="opacity:0" class="number_element">
+                      <div>3</div><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="number_gradient">
+                    </div>
+                    <div data-w-id="48f142cb-13ff-bdfd-5e27-b7a457a68b2a" class="light_line"><img loading="lazy" src="../images/arrow-right.svg" alt="" class="badge_right">
+                      <div style="width:200%" class="light_gradient"></div>
+                    </div>
+                  </div>
+                  <div class="spacer-small"></div>
+                  <div class="statistics_padding">
+                    <div class="statistics_item-content">
+                      <div data-w-id="adca0b20-f4e5-587a-6417-6606af753797" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-number">36%</div>
+                      <div>
+                        <div data-w-id="adca0b20-f4e5-587a-6417-6606af75379a" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-xl text-color-primary">Performance Leap</div>
+                        <div class="spacer-xsmall"></div>
+                        <div data-w-id="adca0b20-f4e5-587a-6417-6606af75379d" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-sm">Elevate your workflows and outpace the competition using Datagrid’s advanced features.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-id="b3b73182-81c6-dcad-4c5a-a774e24a826c" style="opacity:0" class="statistics_item">
+                  <div class="number">
+                    <div data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb90" class="light_line"><img loading="lazy" src="../images/arrow-left.svg" alt="" class="badge_right">
+                      <div data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb92" class="light_gradient is-left"></div>
+                    </div>
+                    <div data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb93" style="opacity:0" class="number_element">
+                      <div>4</div><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="number_gradient">
+                    </div>
+                    <div data-w-id="62c0d4ed-43aa-c687-6513-8225764bfb97" class="light_line"><img loading="lazy" src="../images/arrow-right.svg" alt="" class="badge_right">
+                      <div style="width:200%" class="light_gradient"></div>
+                    </div>
+                  </div>
+                  <div class="spacer-small"></div>
+                  <div class="statistics_padding">
+                    <div class="statistics_item-content">
+                      <div data-w-id="b3b73182-81c6-dcad-4c5a-a774e24a827b" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-number">54%</div>
+                      <div>
+                        <div data-w-id="b3b73182-81c6-dcad-4c5a-a774e24a827e" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-xl text-color-primary">Strategic Advantage</div>
+                        <div class="spacer-xsmall"></div>
+                        <div data-w-id="b3b73182-81c6-dcad-4c5a-a774e24a8281" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="text-sm">Gain a competitive edge through Datagrid’s powerful, data-driven strategies.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_join-us">
+        <div class="join_wrap">
+          <div class="padding-global is-join-us">
+            <div class="container-large">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="38c4c983-83be-5978-f026-4dbae076950e" class="light_line"><img loading="lazy" src="../images/arrow-left.svg" alt="" class="badge_right"></div>
+                  <div data-w-id="38c4c983-83be-5978-f026-4dbae0769510" class="badge_element">
+                    <div>Join us</div><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="38c4c983-83be-5978-f026-4dbae0769514" class="light_line"><img loading="lazy" src="../images/arrow-right.svg" alt="" class="badge_right"></div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="38c4c983-83be-5978-f026-4dbae0769517" class="heading-style-h2">Ready to transform <br>your financial management?</h2>
+                  <div class="description">
+                    <div data-w-id="38c4c983-83be-5978-f026-4dbae076951c">Streamline your business&#x27;s financial management with our intuitive, scalable SaaS platform. Designed for U.S. enterprises, our solutions simplify complex processes.</div>
+                  </div>
+                </div>
+                <div data-w-id="38c4c983-83be-5978-f026-4dbae076951e">
+                  <a href="http://temlis.com" class="button w-button">Get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="join_bg_grad"><img src="../images/Frame-2147226991_2Frame-2147226991.webp" loading="lazy" sizes="(max-width: 2088px) 100vw, 2088px" srcset="../images/Frame-2147226991_2Frame-2147226991.webp 500w, ../images/Frame-2147226991_2-p-800.png 800w, ../images/Frame-2147226991_2-p-1080.png 1080w, ../images/Frame-2147226991_2-p-1600.png 1600w, ../images/Frame-2147226991_2-p-2000.png 2000w, ../images/Frame-2147226991_2Frame-2147226991.webp 2088w" alt="" class="img"></div>
+        </div>
+      </section>
+      <section class="section_pricing">
+        <div class="padding-global is-padd">
+          <div class="container-large">
+            <div class="wrap">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="6a3d507e-a2c7-9e1f-4a21-ed206fc125f8" class="light_line"><img src="../images/arrow-left.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient is-left"></div>
+                  </div>
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Pricing</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="84e0cf08-cf17-d6d6-a8fa-02d5376404f5" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-style-h2">Simple and transparent pricing</h2>
+                  <div class="description">
+                    <div data-w-id="84e0cf08-cf17-d6d6-a8fa-02d5376404fa" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Choose a plan that fits your business needs and budget. No hidden fees, no surprises—just straightforward pricing for powerful financial management.</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="48f800e9-c133-ffc6-1d83-ef148eaea577" style="opacity:0" data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+                <div class="tabs_menu w-tab-menu">
+                  <a data-w-tab="Tab 1" class="tab w-inline-block w-tab-link w--current">
+                    <div>Montly</div>
+                  </a>
+                  <a data-w-tab="Tab 2" class="tab w-inline-block w-tab-link">
+                    <div>Yearly</div>
+                  </a>
+                </div>
+                <div class="tabs_content w-tab-content">
+                  <div data-w-tab="Tab 1" class="tabs_pane w-tab-pane w--tab-active">
+                    <div class="w-layout-grid pricing_grid">
+                      <div class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="base" class="icon-wrap"><img src="../images/mdi_like.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Basic plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$9</div>
+                          <div class="text-color-alternate">/Month</div>
+                        </div>
+                        <div class="text-color-alternate">Perfect for small businesses or startups, our Starter Plan gives you the essential tools to manage your finances with ease</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                      <div class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="pro" class="icon-wrap w-variant-fff49c35-5622-4259-199c-6d9d85dc0e51"><img src="../images/material-symbols_star-rounded.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Pro plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$19</div>
+                          <div class="text-color-alternate">/Month</div>
+                        </div>
+                        <div class="text-color-alternate">Designed for growing businesses, the Basic Plan expands on our Starter package with additional features</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                      <div id="w-node-e9b91a1e-2dcc-0758-d156-9da032cbe93e-4f905dc0" class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="base" class="icon-wrap"><img src="../images/basil_fire-solid.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Enterprise plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$49</div>
+                          <div class="text-color-alternate">/Month</div>
+                        </div>
+                        <div class="text-color-alternate">Tailored for large enterprises, this plan offers advanced features, personalized support, and the scalability.</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="tabs_pane w-tab-pane">
+                    <div class="w-layout-grid pricing_grid">
+                      <div class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="base" class="icon-wrap"><img src="../images/mdi_like.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Basic plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$99</div>
+                          <div class="text-color-alternate">/Yearly</div>
+                        </div>
+                        <div class="text-color-alternate">Perfect for small businesses or startups, our Starter Plan gives you the essential tools to manage your finances with ease</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                      <div class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="pro" class="icon-wrap w-variant-fff49c35-5622-4259-199c-6d9d85dc0e51"><img src="../images/material-symbols_star-rounded.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Pro plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$299</div>
+                          <div class="text-color-alternate">/Yearly</div>
+                        </div>
+                        <div class="text-color-alternate">Designed for growing businesses, the Basic Plan expands on our Starter package with additional features</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                      <div id="w-node-_9c32bdbe-f0c2-877c-e14b-a6485aeb0111-4f905dc0" class="pricing_card">
+                        <div class="pricing_card-plan">
+                          <div data-wf--icon--variant="base" class="icon-wrap"><img src="../images/basil_fire-solid.svg" loading="lazy" alt="" class="icon-1x1-medium"><img loading="lazy" src="../images/gradient_1gradient.webp" alt="" class="icon_gradient"></div>
+                          <div class="text-xl">Enterprise plan</div>
+                        </div>
+                        <div class="pricing_card-price">
+                          <div class="text-price">$499</div>
+                          <div class="text-color-alternate">/Yearly</div>
+                        </div>
+                        <div class="text-color-alternate">Tailored for large enterprises, this plan offers advanced features, personalized support, and the scalability.</div>
+                        <div>
+                          <a href="http://temlis.com" class="button w-button">Get started</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_testimonials">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="wrap">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="6a3d507e-a2c7-9e1f-4a21-ed206fc125f8" class="light_line"><img src="../images/arrow-left.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient is-left"></div>
+                  </div>
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Testimonials</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="206bf41d-6044-55a6-2977-e7107252c01f" class="heading-style-h2">What our clients are saying</h2>
+                  <div class="description">
+                    <div data-w-id="206bf41d-6044-55a6-2977-e7107252c022">Our financial management platform is transforming the way people manage their money. Here’s what some of our users have to say about their experience</div>
+                  </div>
+                </div>
+              </div>
+              <div data-w-id="206bf41d-6044-55a6-2977-e7107252c024" class="testimonial_line">
+                <div class="testimonials_group is-horizontal">
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“The automation features are a game-changer. No more manual work!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-5_1profiles-5.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Emma Robertson</div>
+                          <div class="text-sm">Freelancer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“With Aurion, I finally have a clear understanding of my store&#x27;s finances. The profit and loss tracking tools, combined with easy tax preparation, have saved me so much time and money. Best decision I’ve made for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-4_1profiles-4.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Ryan Palmer</div>
+                          <div class="text-sm">Owner of Trendy Goods</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“Simple, reliable, and effective. It’s perfect for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-3_1profiles-3.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Linda Kiely</div>
+                          <div class="text-sm">E-commerce Seller</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“When scaling a startup, staying on top of cash flow is crucial. [SaaS Name] has been our go-to tool for managing finances efficiently. The customizable dashboards and predictive analytics give us a clear view of where we’re headed financially.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-2_1profiles-2.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Alex Jan</div>
+                          <div class="text-sm">CEO</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“I finally feel in control of my finances. Thank you, Aurion”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-8_1profiles-8.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Mark Julio</div>
+                          <div class="text-sm">Entrepreneur</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“This tool has saved us hours every month. Highly recommend it!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles_1profiles.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">James Luis</div>
+                          <div class="text-sm">Startup Founder</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                </div>
+                <div class="testimonials_group is-horizontal">
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“The automation features are a game-changer. No more manual work!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-5_1profiles-5.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Emma Robertson</div>
+                          <div class="text-sm">Freelancer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“With Aurion, I finally have a clear understanding of my store&#x27;s finances. The profit and loss tracking tools, combined with easy tax preparation, have saved me so much time and money. Best decision I’ve made for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-4_1profiles-4.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Ryan Palmer</div>
+                          <div class="text-sm">Owner of Trendy Goods</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“Simple, reliable, and effective. It’s perfect for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-3_1profiles-3.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Linda Kiely</div>
+                          <div class="text-sm">E-commerce Seller</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“When scaling a startup, staying on top of cash flow is crucial. [SaaS Name] has been our go-to tool for managing finances efficiently. The customizable dashboards and predictive analytics give us a clear view of where we’re headed financially.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-2_1profiles-2.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Alex Jan</div>
+                          <div class="text-sm">CEO</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“I finally feel in control of my finances. Thank you, Aurion”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-8_1profiles-8.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Mark Julio</div>
+                          <div class="text-sm">Entrepreneur</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“This tool has saved us hours every month. Highly recommend it!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles_1profiles.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">James Luis</div>
+                          <div class="text-sm">Startup Founder</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                </div>
+                <div class="testimonials_group is-horizontal">
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“The automation features are a game-changer. No more manual work!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-5_1profiles-5.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Emma Robertson</div>
+                          <div class="text-sm">Freelancer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“With Aurion, I finally have a clear understanding of my store&#x27;s finances. The profit and loss tracking tools, combined with easy tax preparation, have saved me so much time and money. Best decision I’ve made for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-4_1profiles-4.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Ryan Palmer</div>
+                          <div class="text-sm">Owner of Trendy Goods</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“Simple, reliable, and effective. It’s perfect for my business.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-3_1profiles-3.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Linda Kiely</div>
+                          <div class="text-sm">E-commerce Seller</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“When scaling a startup, staying on top of cash flow is crucial. [SaaS Name] has been our go-to tool for managing finances efficiently. The customizable dashboards and predictive analytics give us a clear view of where we’re headed financially.”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-2_1profiles-2.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Alex Jan</div>
+                          <div class="text-sm">CEO</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“I finally feel in control of my finances. Thank you, Aurion”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles-8_1profiles-8.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">Mark Julio</div>
+                          <div class="text-sm">Entrepreneur</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials_card is-sec">
+                    <div class="testimonials_wrap"><img src="../images/Frame-1000002072_1.svg" loading="lazy" alt="" class="icon">
+                      <div>“This tool has saved us hours every month. Highly recommend it!”</div>
+                      <div class="testimonials_content">
+                        <div class="testimonials_img"><img src="../images/profiles_1profiles.webp" loading="lazy" alt="" class="img"></div>
+                        <div class="testimonials_details">
+                          <div class="text-color-primary">James Luis</div>
+                          <div class="text-sm">Startup Founder</div>
+                        </div>
+                      </div>
+                    </div><img src="../images/pins_1pins.webp" loading="lazy" alt="" class="testimonials_gradient">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_articles">
+        <div class="padding-global padding-section-large">
+          <div class="container-large">
+            <div class="wrap">
+              <div class="top">
+                <div class="badge">
+                  <div data-w-id="6a3d507e-a2c7-9e1f-4a21-ed206fc125f8" class="light_line"><img src="../images/arrow-left.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient is-left"></div>
+                  </div>
+                  <div data-w-id="63709d77-bca0-c944-41ff-7409388df2c7" class="badge_element">
+                    <div>Articles</div><img src="../images/gradient_1gradient.webp" loading="lazy" alt="" class="badge_gradient">
+                  </div>
+                  <div data-w-id="d6819ed9-c329-cd61-caf0-445f3d9317bb" class="light_line"><img src="../images/arrow-right.svg" loading="lazy" alt="" class="badge_right">
+                    <div class="light_gradient"></div>
+                  </div>
+                </div>
+                <div class="header">
+                  <h2 data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332d9b" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="heading-style-h2">Maximizing the <br>value of business data</h2>
+                  <div class="description is-articles">
+                    <div data-w-id="c9e46c8b-e4fb-13d0-f316-ba8808332da0" style="opacity:0;-webkit-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">Our provide valuable insights, and establish your brand as a thought leader in the financial space.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog_list-wrap w-dyn-list">
+                <div role="list" class="blog_list w-dyn-items">
+                  <div role="listitem" class="blog_card is-sec w-dyn-item">
+                    <div class="blog_card-img"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="img w-dyn-bind-empty"></div>
+                    <div class="blog_content">
+                      <div>
+                        <div class="text-2xl w-dyn-bind-empty"></div>
+                        <div class="spacer-small"></div>
+                        <div class="w-dyn-bind-empty"></div>
+                      </div>
+                      <a href="#" class="button w-button">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-wf--footer--variant="tertiary" class="section_footer w-variant-f7e7db13-ae73-d355-a268-a125abdcbf8a">
+        <div class="padding-global is-footer w-variant-f7e7db13-ae73-d355-a268-a125abdcbf8a">
+          <div class="container-large">
+            <div class="footer w-variant-f7e7db13-ae73-d355-a268-a125abdcbf8a">
+              <div class="footer_content w-variant-f7e7db13-ae73-d355-a268-a125abdcbf8a">
+                <a href="../index.html" class="navbar_logo-link w-nav-brand"><img loading="lazy" src="../images/Group-1321319632_1Group-1321319632.webp" alt="" class="navbar_logo"></a>
+                <div class="text-sm">Streamline your business&#x27;s financial management with our intuitive, scalable SaaS platform.</div>
+              </div>
+              <div class="footer_grid w-variant-f7e7db13-ae73-d355-a268-a125abdcbf8a">
+                <div class="footer_column">
+                  <a href="../home/home-v1.html" class="footer_link w-inline-block">
+                    <div>Home V.1</div>
+                  </a>
+                  <a href="../home/home-v2.html" class="footer_link w-inline-block">
+                    <div>Home V.2</div>
+                  </a>
+                  <a href="../home/home-v3.html" aria-current="page" class="footer_link w-inline-block w--current">
+                    <div>Home V.3</div>
+                  </a>
+                  <a href="../features.html" class="footer_link w-inline-block">
+                    <div>Features</div>
+                  </a>
+                </div>
+                <div class="footer_column">
+                  <a href="../about.html" class="footer_link w-inline-block">
+                    <div>About</div>
+                  </a>
+                  <a href="../pricing/pricing-1.html" class="footer_link w-inline-block">
+                    <div>Pricing V.1</div>
+                  </a>
+                  <a href="../pricing/pricing-2.html" class="footer_link w-inline-block">
+                    <div>Pricing V.2</div>
+                  </a>
+                  <a href="../pricing/pricing-3.html" class="footer_link w-inline-block">
+                    <div>Pricing V.3</div>
+                  </a>
+                </div>
+                <div class="footer_column">
+                  <a href="../blog/blog-1.html" class="footer_link w-inline-block">
+                    <div>Blog V.1</div>
+                  </a>
+                  <a href="../blog/blog-2.html" class="footer_link w-inline-block">
+                    <div>Blog V.2</div>
+                  </a>
+                  <a href="../blog/blog-3.html" class="footer_link w-inline-block">
+                    <div>Blog V.3</div>
+                  </a>
+                  <a href="https://nexio-temlis.webflow.io/articles/simplify-and-empower-your-financial-management-with-aurion" class="footer_link w-inline-block">
+                    <div>Internal blog</div>
+                  </a>
+                </div>
+                <div class="footer_column">
+                  <a href="https://nexio-temlis.webflow.io/product/track-your-balance" class="footer_link w-inline-block">
+                    <div>Product</div>
+                  </a>
+                  <a href="https://nexio-temlis.webflow.io/category/starter" class="footer_link w-inline-block">
+                    <div>Categories</div>
+                  </a>
+                  <a href="../template/licensing.html" class="footer_link w-inline-block">
+                    <div>Licensing</div>
+                  </a>
+                  <a href="../template/style-guide.html" class="footer_link w-inline-block">
+                    <div>Style Guide</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=680a82ef30fab6e54f905d55" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
