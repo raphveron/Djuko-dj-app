@@ -2,7 +2,7 @@
 import React from 'react'
 import { cn } from '@/utils/cn'
 import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
+import { HeroWebflow } from '@/components/webflow/HeroWebflow'
 import { Card } from '@/components/Card'
 import { SectionHeader } from '@/components/SectionHeader'
 import { Footer } from '@/components/Footer'
@@ -15,7 +15,7 @@ const HomePage = () => {
 
       <main>
         {/* Hero Section */}
-        <Hero
+        <HeroWebflow
           title="Enhance your financial control with Nexio"
           subtitle="Simplify your workflow"
           description="Streamline your business's financial management with our intuitive, scalable SaaS platform. Designed for U.S. enterprises."
