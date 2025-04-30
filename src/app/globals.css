@@ -1,26 +1,126 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* --- BASE STYLES --- */
+@layer base {
+  html {
+    font-size: calc(0.599rem + 0.445vw);
+    background-color: #000; /* fallback si body n'est pas full height */
+    color-scheme: dark;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  @media screen and (max-width: 1440px) {
+    html {
+      font-size: calc(0.599rem + 0.445vw);
+    }
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @media screen and (max-width: 991px) {
+    html {
+      font-size: calc(0.447rem + 0.893vw);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: calc(0.667rem + 0.694vw);
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    html {
+      font-size: calc(0.749rem + 0.837vw);
+    }
+  }
+
+  body {
+    @apply antialiased;
+    background-color: #000; /* fond noir natif */
+    color: #fff; /* texte par défaut */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a {
+    @apply text-primary hover:underline;
+  }
+
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* --- COMPONENTS & UTILITAIRES --- */
+@layer components {
+  .container-small {
+    @apply max-w-[32rem] mx-auto;
+  }
+
+  .container-medium {
+    @apply max-w-[40rem] mx-auto;
+  }
+
+  .container-large {
+    @apply max-w-[48rem] mx-auto;
+  }
+
+  .padding-global {
+    @apply px-4;
+  }
+
+  .padding-section-small {
+    @apply py-8;
+  }
+
+  .padding-section-medium {
+    @apply py-16;
+  }
+
+  .padding-section-large {
+    @apply py-24;
+  }
+
+  .text-style-2lines {
+    @apply line-clamp-2;
+  }
+
+  .text-style-3lines {
+    @apply line-clamp-3;
+  }
+
+  .hide {
+    @apply hidden;
+  }
+
+  @media (max-width: 991px) {
+    .hide-tablet {
+      @apply hidden;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .hide-mobile-landscape {
+      @apply hidden;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .hide-mobile {
+      @apply hidden;
+    }
+  }
+}
+
+/* --- VARIABLES CSS COULEUR --- */
+:root {
+  --color-primary: #4d65ff;
+  --color-primary-text: #000000;
+  --color-secondary: #f5f5f5;
+  --color-secondary-text: #666666;
+  --color-tertiary: #ffffff;
+  --color-alternate-text: #ffffff;
 }
