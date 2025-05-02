@@ -53,6 +53,8 @@ const config: Config = {
         'section-medium': '4rem',
         'section-large': '6rem',
         'global': '1rem',
+        'hero': '120px', // Pour hero_padding
+        'section': '80px', // Pour les espacements entre sections
       },
       // Colors
       colors: {
@@ -83,6 +85,11 @@ const config: Config = {
           text: 'var(--color-alternate-text)',
         },
       },
+      // Background Images
+      backgroundImage: {
+        'light-gradient': 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)',
+        'badge-gradient': 'linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%)',
+      },
     },
     // Breakpoints
     screens: {
@@ -90,6 +97,7 @@ const config: Config = {
       'md': '767px',    // Mobile Landscape
       'lg': '991px',    // Tablet
       'xl': '1440px',   // Desktop
+      'mobile-landscape': '767px', // Pour hide-mobile-landscape
     },
   },
   plugins: [],

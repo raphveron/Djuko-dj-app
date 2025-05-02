@@ -1,126 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* --- BASE STYLES --- */
 @layer base {
-  html {
-    font-size: calc(0.599rem + 0.445vw);
-    background-color: #000; /* fallback si body n'est pas full height */
-    color-scheme: dark;
-  }
-
-  @media screen and (max-width: 1440px) {
-    html {
-      font-size: calc(0.599rem + 0.445vw);
-    }
-  }
-
-  @media screen and (max-width: 991px) {
-    html {
-      font-size: calc(0.447rem + 0.893vw);
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    html {
-      font-size: calc(0.667rem + 0.694vw);
-    }
-  }
-
-  @media screen and (max-width: 479px) {
-    html {
-      font-size: calc(0.749rem + 0.837vw);
-    }
+  :root {
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-primary-text: #1e293b;
+    --color-secondary: #64748b;
+    --color-secondary-text: #64748b;
+    --color-tertiary: #94a3b8;
+    --color-alternate-text: #f8fafc;
   }
 
   body {
-    @apply antialiased;
-    background-color: #000; /* fond noir natif */
-    color: #fff; /* texte par défaut */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  a {
-    @apply text-primary hover:underline;
-  }
-
-  *[tabindex]:focus-visible,
-  input[type="file"]:focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-primary;
+    @apply font-sans text-primary-text bg-white;
   }
 }
 
-/* --- COMPONENTS & UTILITAIRES --- */
 @layer components {
-  .container-small {
-    @apply max-w-[32rem] mx-auto;
-  }
-
-  .container-medium {
-    @apply max-w-[40rem] mx-auto;
-  }
-
-  .container-large {
-    @apply max-w-[48rem] mx-auto;
-  }
-
-  .padding-global {
-    @apply px-4;
-  }
-
-  .padding-section-small {
-    @apply py-8;
-  }
-
-  .padding-section-medium {
-    @apply py-16;
-  }
-
-  .padding-section-large {
-    @apply py-24;
-  }
-
-  .text-style-2lines {
-    @apply line-clamp-2;
-  }
-
-  .text-style-3lines {
-    @apply line-clamp-3;
-  }
-
-  .hide {
-    @apply hidden;
-  }
-
-  @media (max-width: 991px) {
-    .hide-tablet {
-      @apply hidden;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .hide-mobile-landscape {
-      @apply hidden;
-    }
-  }
-
-  @media (max-width: 479px) {
-    .hide-mobile {
-      @apply hidden;
-    }
+  .button {
+    @apply rounded-lg bg-primary px-6 py-3 text-white transition hover:opacity-90;
   }
 }
 
-/* --- VARIABLES CSS COULEUR --- */
 :root {
-  --color-primary: #4d65ff;
-  --color-primary-text: #000000;
-  --color-secondary: #f5f5f5;
-  --color-secondary-text: #666666;
-  --color-tertiary: #ffffff;
-  --color-alternate-text: #ffffff;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} 
