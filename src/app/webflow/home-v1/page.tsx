@@ -8,13 +8,26 @@ export default function HomeV1() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-hero">
+      <section className="relative hero_padding">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
             <div className="mb-8">
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
-                <span>Simplify your workflow</span>
-              </span>
+              <div className="badge">
+                <div className="light_line">
+                  <img src="/images/arrow-left.svg" alt="" className="badge_right" />
+                  <div className="light_gradient is-left"></div>
+                </div>
+                <div className="badge_element">
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-primary">
+                    <span>Simplify your workflow</span>
+                  </span>
+                  <img src="/images/gradient_1gradient.webp" alt="" className="badge_gradient" />
+                </div>
+                <div className="light_line">
+                  <img src="/images/arrow-right.svg" alt="" className="badge_right" />
+                  <div className="light_gradient"></div>
+                </div>
+              </div>
             </div>
             
             <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
@@ -50,19 +63,22 @@ export default function HomeV1() {
       {/* Logos Section */}
       <section className="py-section">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-8">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="flex items-center justify-center">
-                <Image
-                  src={`/images/Logo${i % 4 === 0 ? '' : `-${i % 4}`}.svg`}
-                  alt={`Logo ${i + 1}`}
-                  width={120}
-                  height={40}
-                  className="h-auto w-full max-w-[120px]"
-                  style={{ width: 'auto', height: 'auto' }}
-                />
+          <div className="logos_wrap">
+            <div className="logos_flex">
+              <div className="logos_group">
+                {[...Array(8)].map((_, i) => (
+                  <div key={i} className="logos">
+                    <Image 
+                      src={`/images/Logo${i % 4 === 0 ? '' : `-${i % 4}`}.svg`}
+                      alt={`Logo ${i + 1}`}
+                      width={120}
+                      height={40}
+                      className="logo"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -84,15 +100,14 @@ export default function HomeV1() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Feature 1 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="feature_card">
               <div className="mb-4">
                 <Image
                   src="/images/card_1card.webp"
                   alt="Sign up and customize"
                   width={400}
                   height={300}
-                  className="rounded-lg"
-                  style={{ width: '100%', height: 'auto' }}
+                  className="rounded-lg w-full h-auto"
                 />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Sign up and customize</h3>
@@ -102,7 +117,7 @@ export default function HomeV1() {
             </div>
 
             {/* Feature 2 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="feature_card">
               <h3 className="mb-2 text-xl font-semibold">Link Your Accounts</h3>
               <p className="mb-4 text-secondary-text">
                 Create your account in minutes and tailor the platform to meet your company's unique financial needs.
@@ -113,14 +128,13 @@ export default function HomeV1() {
                   alt="Link Your Accounts"
                   width={400}
                   height={300}
-                  className="rounded-lg"
-                  style={{ width: '100%', height: 'auto' }}
+                  className="rounded-lg w-full h-auto"
                 />
               </div>
             </div>
 
             {/* Feature 3 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="feature_card">
               <h3 className="mb-2 text-xl font-semibold">Integrate Your Data</h3>
               <p className="mb-4 text-secondary-text">
                 Easily link your bank accounts, credit cards, loans, and investment accounts.
@@ -131,22 +145,20 @@ export default function HomeV1() {
                   alt="Integrate Your Data"
                   width={400}
                   height={300}
-                  className="rounded-lg"
-                  style={{ width: '100%', height: 'auto' }}
+                  className="rounded-lg w-full h-auto"
                 />
               </div>
             </div>
 
             {/* Feature 4 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="feature_card">
               <div className="mb-4">
                 <Image
                   src="/images/card-3_1card-3.webp"
                   alt="Start Managing Efficiently"
                   width={400}
                   height={300}
-                  className="rounded-lg"
-                  style={{ width: '100%', height: 'auto' }}
+                  className="rounded-lg w-full h-auto"
                 />
               </div>
               <h3 className="mb-2 text-xl font-semibold">Start Managing Efficiently</h3>
@@ -175,7 +187,7 @@ export default function HomeV1() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Stat 1 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="stat_card">
               <div className="mb-4 text-4xl font-bold text-primary">95%</div>
               <h3 className="mb-2 text-xl font-semibold text-primary">Fast-Track Results</h3>
               <p className="text-sm text-secondary-text">
@@ -184,7 +196,7 @@ export default function HomeV1() {
             </div>
 
             {/* Stat 2 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="stat_card">
               <div className="mb-4 text-4xl font-bold text-primary">20%</div>
               <h3 className="mb-2 text-xl font-semibold text-primary">Increased Efficiency</h3>
               <p className="text-sm text-secondary-text">
@@ -193,7 +205,7 @@ export default function HomeV1() {
             </div>
 
             {/* Stat 3 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="stat_card">
               <div className="mb-4 text-4xl font-bold text-primary">36%</div>
               <h3 className="mb-2 text-xl font-semibold text-primary">Performance Leap</h3>
               <p className="text-sm text-secondary-text">
@@ -202,7 +214,7 @@ export default function HomeV1() {
             </div>
 
             {/* Stat 4 */}
-            <div className="rounded-lg bg-white p-6 shadow-lg">
+            <div className="stat_card">
               <div className="mb-4 text-4xl font-bold text-primary">54%</div>
               <h3 className="mb-2 text-xl font-semibold text-primary">Strategic Advantage</h3>
               <p className="text-sm text-secondary-text">
@@ -214,7 +226,8 @@ export default function HomeV1() {
       </section>
 
       {/* Join Section */}
-      <section className="py-section">
+      <section className="join_section">
+        <div className="join_gradient"></div>
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="mb-8">
@@ -274,7 +287,7 @@ export default function HomeV1() {
                 "Aurion made managing our finances so easy. I can track everything in one place!"
               </p>
               <div className="flex items-center gap-4">
-                <Image
+                <Image 
                   src="/images/profiles-8_1profiles-8.webp"
                   alt="David James"
                   width={48}
@@ -326,7 +339,7 @@ export default function HomeV1() {
                 "We rely on Aurion to keep our financials transparent and organized. The donor tracking and expense categorization features are perfect for nonprofits like ours. Plus, the customer support is always there when we need help!"
               </p>
               <div className="flex items-center gap-4">
-                <Image
+                <Image 
                   src="/images/profiles-6_1profiles-6.webp"
                   alt="Maria Clayton"
                   width={48}
