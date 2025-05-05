@@ -1,95 +1,52 @@
 "use client";
 
-import Image from 'next/image';
-
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-white font-body overflow-hidden">
-      {/* Background Elements */}
-      <div className="fixed inset-0 -z-10">
-        <Image
-          src="/images/Vector-116_1Vector 116.webp"
-          alt="Background Pattern"
-          fill
-          className="object-cover opacity-20"
-          priority
-          sizes="100vw"
-        />
-      </div>
-
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/bg_1-p-1600.png"
-            alt="Hero Background"
-            fill
-            className="object-cover opacity-30"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black" />
+      <section className="hero-container">
+        {/* Background Elements */}
+        <div className="hero-background">
+          <div className="hero-gradient" />
+          <div className="hero-particles" />
         </div>
 
+        {/* Content */}
         <div className="hero-content">
-          <div className="hero-badge mb-8">
+          {/* Badge */}
+          <div className="hero-badge">
             <div className="badge_element">
-              <div className="badge_gradient" style={{ background: 'linear-gradient(90deg, #4d65ff, transparent)' }} />
-              <Image
-                src="/images/Frame-1000002213-2_2Frame 1000002213-2.webp"
-                alt="Arrow"
-                width={16}
-                height={16}
-                className="w-4 h-4"
-              />
+              <div className="light_gradient is-left" />
             </div>
-            <span className="text-sm font-medium">Welcome to REQUESTA</span>
+            <span className="text-sm font-medium text-primary-text">Welcome to REQUESTA</span>
             <div className="badge_element">
-              <div className="badge_gradient" style={{ background: 'linear-gradient(-90deg, #4d65ff, transparent)' }} />
-              <Image
-                src="/images/Frame-1000002213-3_1-p-130x130q80.png"
-                alt="Arrow"
-                width={16}
-                height={16}
-                className="w-4 h-4"
-              />
+              <div className="light_gradient" />
             </div>
           </div>
 
+          {/* Title */}
           <h1 className="hero-title">
             The New Way to Request Your Favorite Songs
           </h1>
+
+          {/* Description */}
           <p className="hero-description">
             Connect with DJs instantly and make your music requests in real-time. 
             Experience the future of DJ-Client interaction.
           </p>
+
+          {/* CTA Button */}
           <a
             href="https://request-dj-app.vercel.app/getDJs"
-            className="hero-cta"
+            className="button"
           >
             Request Your Song
-            <Image
-              src="/images/Frame-1000002213-1_1Frame 1000002213-1.webp"
-              alt="Arrow"
-              width={20}
-              height={20}
-              className="w-5 h-5"
-            />
           </a>
         </div>
       </section>
 
       {/* How It Works Section */}
       <section className="relative py-24 px-4">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/asdd_1-p-1080.png"
-            alt="Background Pattern"
-            fill
-            className="object-cover opacity-10"
-            sizes="100vw"
-          />
-        </div>
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
             How It Works
@@ -130,16 +87,9 @@ export default function Home() {
           </p>
           <a
             href="/signUpDJ"
-            className="hero-cta"
+            className="button"
           >
             Sign Up as a DJ
-            <Image
-              src="/images/Frame-1000002213-1_1Frame 1000002213-1.webp"
-              alt="Arrow"
-              width={20}
-              height={20}
-              className="w-5 h-5"
-            />
           </a>
         </div>
       </section>
@@ -162,16 +112,9 @@ export default function Home() {
             </a>
             <a
               href="/signUpDJ"
-              className="hero-cta"
+              className="button"
             >
               Create a DJ Account
-              <Image
-                src="/images/Frame-1000002213-1_1Frame 1000002213-1.webp"
-                alt="Arrow"
-                width={20}
-                height={20}
-                className="w-5 h-5"
-              />
             </a>
           </div>
         </div>
